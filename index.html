@@ -1,0 +1,1340 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aaratech 3d - Official Website!</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/css/glide.core.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/css/glide.theme.min.css">
+	<link rel="icon" href="asset/logos.png">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url(//db.onlinewebfonts.com/c/c9f309b3d47969ecac64a77a6c672594?family=Nexa+Bold);
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+/*body css starts*/
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+/*body css ends*/
+h1 {
+  font-size: 1.6em;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 25px;
+  font-size: 1.2em;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+	position: fixed;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background: #fff;
+  color: #333;
+  padding: 0.7rem 0.6rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+nav::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo span {
+  font-weight: 300;
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #464655;
+  height: 0px;
+  overflow: hidden;
+}
+
+.site-nav--open {
+  height: auto;
+}
+
+.site-nav li {
+	line-height: 50px;
+  border-bottom: 1px solid #575766;
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 2em 6em 2em 2em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #e4b363;
+  color: #464655
+}
+
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,0.45);
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: 1em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  content: '';
+  display: block;
+  background: #333;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translatey(-7px);
+}
+
+.hamburger::after {
+  transform: translatey(4px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translatey(-3px) rotate(-90deg);
+}
+
+@media (min-width: 700px) {
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+  }
+  
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+  
+  .site-nav a {
+  	color: #333;
+    padding: 0;
+    margin-left: 3em;
+  }
+  
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+  
+  .site-nav--icon {
+    display: none;
+  }
+  
+}
+/*navigation style ends*/
+/*landing css starts*/
+.landing{
+	width: 100%;
+	margin-top: -25px;
+	padding: 0;
+	flex-wrap: wrap;
+	background: #C9D6FF; 
+	background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+	background: linear-gradient(to left, #E2E2E2, #C9D6FF);
+	height: 84vh;
+	display: flex;
+	border-radius: 0 0 0 0;
+	justify-content: space-around;
+}
+.landing .landing-page{
+	display: flex;
+	flex-wrap: wrap;
+	width: fit-content;
+	padding: 1rem;
+}
+.landing .landing-page .landing-about{
+	margin: 2rem;
+	margin-top: 4rem;
+}
+.landing-page .landing-texts p{
+	color: #2324EC;
+	text-transform: uppercase;
+	font-size: 15px;
+
+	font-weight: bold;
+}
+.landing-page .landing-texts h1{
+	font-size: 8rem;
+  	line-height: 1.2;
+	font-family: 'Oswald', sans-serif;
+	background: linear-gradient( #E60AE3, #6046F8);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	width: fit-content;
+}
+.landing-page .landing-texts span{
+	font-size: 1.4rem;
+	font-family: 'Josefin Sans', sans-serif;
+	word-break: break-all;
+}
+.landing-page .landing-about button{
+	margin-top: 1rem;
+	cursor: pointer;
+	background: #fff;
+	color: #333;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	font-weight: 700;
+}
+@media (max-width: 563px) {
+	.landing-page .landing-texts h1{
+		font-size: 5rem;
+	}
+}
+@media (max-width: 397px) {
+	.landing-page .landing-texts h1{
+		font-size: 3.5rem;
+	}
+}
+
+/*landing css ends*/
+/*about css starts*/
+#about{
+	font-family: "Nexa Bold", Sans-serif;
+}
+#about .about-first{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#about .about-first .first-about p{
+	background: #E6EDF3;
+	color:  #1C8FCB;
+	text-transform: uppercase;
+	border-radius: 2rem;
+	padding: 0.8rem;
+	/*font-weight: bold;*/
+}
+#about .about-first .about-texts h1{
+	font-size: 47px;
+    letter-spacing: 0.2px;
+    
+}
+#about .about-next{
+	padding: 4rem 0rem;
+	background: #83a4d4;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+#about .about-next .next-about-each{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.about-next .next-about-each .about-each-div{
+	background: #fff;
+	width: 40rem;
+	margin: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	padding: 1rem;
+	border-radius: 1rem;
+	transition: 0.24s;
+	cursor: pointer;
+}
+.about-next .next-about-each .about-each-div:hover{
+	background: -webkit-linear-gradient(to right, #99E8FF, #F6B4FA);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #99E8FF, #F6B4FA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #3B58FE;
+}
+.about-next .next-about-each .about-each-div p{
+	word-break: break-all;
+	font-family: 'Roboto', sans-serif;
+
+}
+/*about css ends*/
+/*work css starts*/
+#works{
+	background-color: #F8FDFF;
+}
+#works .our-work-heading{
+	font-family: "Nexa Bold", Sans-serif;
+}
+.our-works{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.our-works .our-work-info{
+	
+	cursor: pointer;
+	font-family: 'Red Hat Display', sans-serif;
+	margin: 1rem;
+	display: flex;
+	padding: 1rem;
+	flex-direction: column;
+	align-items: center;
+	width: 390px;
+	border-radius: 1rem;
+	transition: 0.15s;
+}
+.our-works .our-work-info .work-info-image img{
+	width: 150px;
+	border-radius: 50%;
+	padding: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+	            rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+	            rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+	            rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+	            rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+	            rgba(0, 0, 0, 0.07) 0px 32px 64px;
+	background: #fff;
+
+}
+
+.our-works .our-work-info:nth-child(1),
+.our-works .our-work-info:nth-child(3),
+.our-works .our-work-info:nth-child(5){
+	background: #E5F9FF;
+}
+.our-works .our-work-info:nth-child(2),
+.our-works .our-work-info:nth-child(4),
+.our-works .our-work-info:nth-child(6){
+	background: #FFF3E9;
+}
+.our-works .our-work-info:nth-child(7),
+.our-works .our-work-info:nth-child(9){
+	background: #FEEBE5;
+}
+.our-works .our-work-info:nth-child(8){
+	background: #EAF2FE;
+}
+.our-works .our-work-info:hover{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+}
+.our-works .our-work-info .work-info-slogan p{
+	word-break: break-all;
+}
+.our-works .our-work-info .work-info-button button{
+	background-color: #ED746D;
+	padding: 1rem 1.5rem;
+	outline: none;
+	border-radius: 0.4rem;
+	text-transform: capitalize;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	color:  #fff;
+}
+/*work ends starts*/
+/*faqs section starts*/
+#faqs{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.faqs{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: #C9D6FF; 
+	background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+	background: linear-gradient(to left, #E2E2E2, #C9D6FF);
+}
+.faqs .faqs-content{
+	border-radius: 5px;
+	margin: 1rem;
+	padding: 1rem;
+}
+.faqs .faqs-heading{
+	font-family: "Nexa Bold", Sans-serif;
+	text-align: center;
+	width: 379px;
+}
+.faqs .faqs-heading .heading-text{
+	margin: 1rem;
+	font-size: 26px;
+}
+.faqs .faqs-heading  p{
+	font-size: 20px;
+}
+.faqs .faqs-content .content-text{
+	padding: 1rem;
+	
+}
+.faqs .faqs-content .content-text details summary{
+	background-color: #EAEDED;	
+	padding: 1rem;
+	font-weight: bold;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: height 0.3s ease-out; /* Add a transition to the height property */
+}
+.faqs .faqs-content .content-text details[open] summary:before{
+	transform: rotate(360deg);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+.faqs .faqs-content .content-text details div{
+	margin: 1rem 0rem 0rem 0rem;
+	width: 393px;
+	background-color: #EAEDED;
+	padding: 1rem;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: height 0.3s ease-out; /* Add a transition to the height property */
+}
+.faqs .faqs-content .content-text details[open] div{
+	
+}
+@media screen and (max-width:  617px){
+	.faqs .faqs-content .content-text details div{
+		width: 230px;
+	}
+}
+/*faqs section ends*/
+/*team section starts*/
+#team{
+	font-family: "Nexa Bold", Sans-serif;
+}
+.team-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	animation-name: moveUpDown;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.team-div .team-about{
+	margin: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.6rem;
+	text-align: center;
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.team-div .team-about .about-member-info{
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 1rem;
+}
+.team-div .team-about p{
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.about-member-pic img{
+	width: 400px;
+	height: 400px;
+}
+@media screen and (max-width:  617px){
+	.about-member-pic img{
+		width: 300px;
+		height: 300px;
+	}
+}
+/*team section ends*/
+/*testomonials section starts*/
+#testomonials{
+	padding: 1rem;
+	background: #C9D6FF; 
+	background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+	background: linear-gradient(to left, #E2E2E2, #C9D6FF);
+}
+.testomonial-heading .testomonial-heading-desc{
+	list-style-type: disc;
+}
+.testomonial-heading .testomonial-heading-desc p{
+		font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(to right, #0146E4, #04CCEE);
+	  -webkit-background-clip: text;
+	  background-clip: text;
+	  color: transparent;
+    display: inline-block;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.testomonial-heading .testomonial-heading-text h1{
+	font-size: 40px;
+	font-family: "Nexa Bold", Sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.testomonial{
+	display: flex;
+	padding: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.testomonial .glide{
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+.testomonial .testomonial-info{
+	margin: 1rem;
+	padding: 1.4rem;
+	background: #fff;
+	text-align: center;
+	width: 500px;
+	border-radius: 0.6rem;
+	box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+    -webkit-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+    -moz-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+}
+@media screen and (max-width:  617px){
+	.testomonial .testomonial-info{
+		margin: 0rem -1rem;
+		padding: 2rem;
+	}
+}
+.testomonial .testomonial-info .testomonial-info-image img{
+	width: 200px;
+	border-radius: 50%;
+}
+.testomonial .testomonial-info .testomonial-info-text p{
+	word-break: break-all;
+	font-size: 22px;
+  color: #1a1b1e;
+  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 1px;
+}
+.testomonial .testomonial-info .testomonial-info-about h1{
+word-break: break-all;
+	font-size: 27px;
+  color: #1a1b1e;
+  font-family: "Nexa Bold", Sans-serif;
+  letter-spacing: 1px;
+}
+.testomonial .testomonial-info .testomonial-info-about p{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+/*testomonials section ends*/
+/*aaratech starts*/
+.aaratech{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	/*background: red;*/
+}
+.aaratech .aaratech-heading h1{
+	font-size: 27px;
+  color: #1a1b1e;
+  font-family: "Nexa Bold", Sans-serif;
+  letter-spacing: 1px;
+}
+.aaratech .arratech-video {
+	margin: 1rem 0rem;
+}
+.aaratech .arratech-video video{
+	width: 100%;
+}
+/*aaratech ends*/
+/*footer starts*/
+#footer{
+	background: #F7F9FE;
+}
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 1rem;
+}
+.footer .footer-left{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/*background: red;*/
+	padding: 1rem;
+	margin: 1rem;
+	flex-direction: column;
+}
+.footer .footer-left .left-footer-about{
+	/*padding: 1rem;*/
+	margin: 1.5rem 0rem;
+}
+.footer .footer-left .left-footer-about{
+	width: 360px;
+}
+.footer .footer-left .left-footer-about span{
+	font-size: 23px;
+	word-break: break-all;
+}
+.footer .footer-left p{
+	text-align: center;
+}
+.footer .footer-left .left-footer-icons{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.footer .footer-left .left-footer-icons i{
+	padding: 1rem;
+	margin: 0.5rem;
+	font-size: 30px;
+}
+.footer .footer-right{
+	display: flex;
+	flex-wrap: wrap; 
+	margin: 1.5rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/*background: red;*/
+}
+.footer .footer-right .footer-about-links, .footer .footer-right .footer-contact-links, .footer .footer-right .footer-products-links{
+	margin: 3rem 3rem;
+	display: flex;
+	
+	flex-direction: column;
+}
+.footer .footer-right .footer-about-links a,
+.footer .footer-right .footer-contact-links a, 
+.footer .footer-right .footer-products-links a{
+	font-size: 22px;
+	text-transform: capitalize;
+	color: #445F86;
+	font-family: 'Nunito Sans', sans-serif;
+	text-decoration: none;
+}
+.footer .footer-right .footer-heading{
+	font-family: "Nexa Bold", Sans-serif;
+}
+.footer-ends{
+	display: flex;
+	justify-content: space-around;
+}
+.footer-ends .footer-left-end h1{
+	text-transform: capitalize;
+	font-family: 'Nunito Sans', sans-serif;
+	letter-spacing: 1px;
+}
+.footer-ends .end-footer-icons{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer-ends .end-footer-icons i{
+	padding: 1rem;
+	margin: 0.5rem;
+	font-size: 30px;
+}
+/*footer ends*/
+</style>
+<body>
+	<!-- navbar starts here -->
+	<div class="nav-bar">
+		<nav>
+  <div class="container">
+  	<div class="nav-logo" class="animate__animated animate__bounceInDown">
+  		
+  		<h1 class="logo"><img src="asset/product.png" style="width: 150px;" class="animate__animated animate__backInLeft"></h1>
+  	</div>
+    
+    <ul class="site-nav" >
+      
+      <li><a href="#about" class="animate__animated animate__backInRight"><i class="fa fa-info site-nav--icon"></i>About</a></li>
+      <li><a href="#works" class="animate__animated animate__backInRight"><i class="fa fa-home site-nav--icon"></i>Works</a></li>
+      <li><a href="#faqs" class="animate__animated animate__backInRight"><i class="fa fa-usd site-nav--icon"></i>Faqs</a></li>
+      <li><a href="#team" class="animate__animated animate__backInRight"><i class="fa fa-pencil site-nav--icon"></i>Team</a></li>
+      <li><a href="#" class="animate__animated animate__backInRight"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+    </ul>
+  
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+  </div>
+</nav>
+	</div>
+	<!-- navbar ends here -->
+	<!-- landing pages starts -->
+	<div class="landing">
+		<div class="landing-page">
+			<div class="landing-about">
+				<div class="landing-texts">
+					<div class="landing-subheading">
+						<!-- <p>A Design, 3d Printing, Prototyping & Product Development Service Hub..</p> -->
+					</div>
+					<div class="landing-main-heading">
+						<h1 class="animate__animated animate__bounceInDown">Conception<br> to Creation.</h1>
+					</div>
+					<div class="landing-text-sologan">
+						<span class="animate__animated animate__lightSpeedInLeft">Welcome to Aaratech 3D, your one-stop solutions for 3D printing,<br>Prototyping  and Design solution.</span>
+					</div>
+				</div>
+				<div class="landing-button" >
+					<a href="#works" style="text-transform: none;" ><button class="animate__animated animate__lightSpeedInLeft">our works</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="landing-image">
+		</div>
+	</div>
+	<!-- landing page ends -->
+	<!-- about section starts -->
+	<section id="about" >
+		<div class="about-first">
+			<div class="first-about">
+				<p>about us</p>
+			</div>
+			<div class="about-texts" style="text-align: center;">
+				<h1>In short —We make <br> digital (magical)<br> designs & bring them<br> alive in 3D.</h1>
+			</div>
+		</div>
+		<div class="about-next">
+			<div class="next-about-each">
+				<div class="about-each-div" style="display: flex;" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+					<div class="about-principal-logo" >
+						<i class="fa fa-repeat" aria-hidden="true" style="font-size: 3rem; color: #2334ff;"></i>
+					</div>
+					<div class="about-principal-head" style="margin-top: -20px; margin-left: 1rem;">
+						<div class="about-principal-heading">
+							<h1>Our Principal</h1>
+						</div>
+						<div class="about-principal-desc">
+							<p>At Aaratech3D, we are passionate about unlocking the full potential of 3D printing and design technology. We believe that this cutting-edge field can revolutionize the way we create, innovate, and interact with the world around us.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-each-div" style="display: flex;" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+					<div class="about-principal-logo" >
+						<i class="fa fa-search" aria-hidden="true" style="font-size: 3rem; color: #2334ff;"></i>
+					</div>
+					<div class="about-principal-head" style="margin-top: -20px; margin-left: 1rem;">
+						<div class="about-principal-heading">
+							<h1>We like to experiment</h1>
+						</div>
+						<div class="about-principal-desc">
+							<p>Whether it's developing a new product, designing a custom gift or souvenir, or prototyping a complex component, we always bring our spirit of experimentation to the table. We're passionate about what we do, and we're committed to delivering the highest quality results for our clients.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-each-div" style="display: flex;" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+					<div class="about-principal-logo" >
+						<i class="fa fa-eye" aria-hidden="true" style="font-size: 3rem; color: #2334ff;"></i>
+					</div>
+					<div class="about-principal-head" style="margin-top: -20px; margin-left: 1rem;">
+						<div class="about-principal-heading">
+							<h1>We Do good work</h1>
+						</div>
+						<div class="about-principal-desc">
+							<p>At AaraTech3D, we believe that doing good work is not just a slogan, but a way of life. We are proud of the work we do, and we are committed to making a lasting, positive impact on the world around us.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-each-div" style="display: flex;" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+					<div class="about-principal-logo" >
+						<i class="fa fa-pencil" aria-hidden="true" style="font-size: 2.5rem; color: #2334ff;"></i>
+					</div>
+					<div class="about-principal-head" style="margin-top: -20px; margin-left: 1rem;">
+						<div class="about-principal-heading">
+							<h1>We enjoy Making</h1>
+						</div>
+						<div class="about-principal-desc">
+							<p>At AaraTech3D, we don't just see 3D printing and designing as a job, but as a passion that we love to pursue. Our team of experts enjoys every step of the process, from ideation and design to final production, because we know that every project we undertake is an opportunity to create something unique and remarkable.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- about section ends -->
+	<!-- works section starts -->
+	<section id="works" class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+		<div class="our-work-heading">
+			<center><h1>Our Works</h1></center>
+			<center><p style="font-family: 'Urbanist', sans-serif; font-size: 30px;">This is how we transform your imagination into a tangible reality via our works.</p></center>
+		</div>
+		<div class="our-works">
+			
+			<div class="our-work-info" data-aos="zoom-in-up">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/4129/4129437.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Product development</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>Our passion lies in designing and developing innovative products, including casings, housings, gadget mockups, containers, electronics, automotive parts, machine components, and more.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+			<div class="our-work-info" data-aos="zoom-in-down">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/2257/2257374.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Decorative Gifts</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>We take pride in creating unique decorative items and gifts, such as 3D moon lamps, box lamps, dual nameplates, statues, iconic vases, keyrings, tokens of love, souvenirs, figurines/miniatures, and more.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+			<div class="our-work-info" data-aos="zoom-in-left">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/3593/3593280.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Medical devices</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>We are dedicated to improving healthcare through the development of cutting-edge medical devices, such as prosthetic arms, prosthetic fingers, and more here on Aaratech 3D for .our. customers.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+			<div class="our-work-info" data-aos="zoom-in-right">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/8646/8646378.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Consumer products</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>We are committed to enhancing everyday life with our high-quality consumer and household products, including mobile/laptop stands, complex kitchen tools, containers, and more.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+			<div class="our-work-info" data-aos="zoom-in-up">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/2781/2781931.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Industrial components</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>Our expertise lies in creating precise and functional mock-ups of pumps, valves, jigs, joints, and other industrial components to convert our customers imagination into reality.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+			<div class="our-work-info" data-aos="zoom-in-down">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/1584/1584911.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Office items</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>We understand the importance of branding and professional image in the workplace, which is why we offer 3D letter boards, nameplates, logo boards, and other office-related items.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+			<div class="our-work-info" data-aos="zoom-in-left">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/2942/2942441.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Architectural models</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>Our team of skilled designers and model-makers bring architectural visions to life with site models, interior design layouts, urban planning models, building/structure models, and more.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+			<div class="our-work-info" data-aos="zoom-in-down">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/3112/3112425.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Design and modelling</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>Our focus is on bringing innovative designs to reality through machine design, product blueprinting, machine/product drawings, 3D modeling, rendered mockups, and more.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+			<div class="our-work-info" data-aos="zoom-in">
+				<div class="work-info-image">
+					<img src="https://cdn-icons-png.flaticon.com/512/3253/3253587.png">
+				</div>
+				<div class="work-info-heading">
+					<h1>Scientific projects</h1>
+				</div>
+				<div class="work-info-slogan">
+					<p>We are passionate about advancing the field of engineering and science through the development of robotics, automation, prototypes, scale models, and other cutting-edge projects.</p>
+				</div>
+				<div class="work-info-button">
+				</div>
+			</div>
+		</div>
+	</section><br>
+	<!-- work section ends -->
+	<!-- faqs section starts -->
+	<section id="faqs">
+		<div class="faqs">
+		<div class="faqs-heading" data-aos="flip-down">
+			<div class="heading-text">
+				<h1>Frequently Asked Questions!</h1>
+			</div>
+			<div class="heading-desc" >
+				<p style="font-family: 'Red Hat Display', sans-serif;">You’ve got questions? We’ve got answers. Here are some of the things that people tend to ask us about frequently. Before you send us your question you may want to read through these first.</p>
+			</div>
+		</div>
+		<div class="faqs-content" data-aos="flip-up"  data-aos-duration="1500">
+			<div class="content-text">
+				<details>
+				  <summary>Are the products Customizable?</summary>
+				  <div>
+				 Yes, the products are customizable to design objects of your choice.
+				  </div>
+				</details>
+			</div>
+			<div class="content-text">
+				<details>
+				  <summary>Can i see the digital preview before confirmation?</summary>
+				  <div>
+				 	 Yes, we can provide you a render or digital design preview to help you decide your choices.
+				  </div>
+				</details>
+			</div>
+			<div class="content-text">
+				<details>
+				  <summary>Can you help me complete the design before doing 3d printing?</summary>
+				  <div>
+				 	Yes, we will help you along the design process and also to make necessary modification ensuring quality production.
+				  </div>
+				</details>
+			</div>
+			<div class="content-text">
+				<details>
+				  <summary>Can you delivery your products into my place?</summary>
+				  <div>
+				 	Yes, we deliver our products all over Nepal.
+				  </div>
+				</details>
+			</div>
+
+		</div>
+	</div>
+	</section>
+	<!-- faqs section ends -->
+	<!-- team section starts -->
+	<section id="team" data-aos="zoom-in-left">
+		<div class="team-heading">
+			<center><h1>Meet our Star Teams</h1></center>
+		</div>
+		<div class="team-div" >
+			<div class="team-about">
+				<div class="about-member-pic">
+					<img src="asset/abhisheks.jpg">
+				</div>
+				<div class="about-member-info">
+					<div class="member-info-name">
+						<h1>Abhishek Bhandari</h1>
+					</div>
+					<div class="member-info-positions">
+						<p>Founder - CEO</p>
+					</div>
+				</div>
+			</div>
+			<div class="team-about">
+				<div class="about-member-pic">
+					<img src="asset/rajan.jpg">
+				</div>
+				<div class="about-member-info">
+					<div class="member-info-name">
+						<h1>Rajan Jung Basnet</h1>
+					</div>
+					<div class="member-info-positions">
+						<p>Technical head</p>
+					</div>
+				</div>
+			</div>
+			<div class="team-about">
+				<div class="about-member-pic">
+					<img src="asset/sankalpa.jpg">
+				</div>
+				<div class="about-member-info">
+					<div class="member-info-name">
+						<h1>Sankalpa Dahal</h1>
+					</div>
+					<div class="member-info-positions">
+						<p>Web Developer</p>
+					</div>
+				</div>
+			</div>
+			<div class="team-about">
+				<div class="about-member-pic">
+					<img src="asset/sashank.jpg">
+				</div>
+				<div class="about-member-info">
+					<div class="member-info-name">
+						<h1>Shasank Pokharel</h1>
+					</div>
+					<div class="member-info-positions">
+						<p>Administrative head</p>
+					</div>
+				</div>
+			</div>
+			<div class="team-about">
+				<div class="about-member-pic">
+					<img src="asset/pawan.jpg">
+				</div>
+				<div class="about-member-info">
+					<div class="member-info-name">
+						<h1>Pawan Karkey</h1>
+					</div>
+					<div class="member-info-positions">
+						<p>Marketing head</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- team section starts -->
+	<!-- testomonials section starts -->
+	<section id="testomonials">
+		<center>
+				<div class="testomonial-heading">
+					<div class="testomonial-heading-desc">
+						<p>* WHAT OUR CLIENTS SAY ABOUT US *</p>
+					</div>
+					<div class="testomonial-heading-text">
+						<h1>Testimonials</h1>
+					</div>
+			</div>
+			</center>
+			<div class="glide" data-aos="flip-right">
+		<div class="glide__track" data-glide-el="track">
+			<ul class="glide__slides">
+				<li class="glide__slide">
+					<div class="testomonial">
+						<div class="testomonial-info">
+				<div class="testomonial-info-image">
+					<img src="asset/nishan.jpg" style="width: 200px;">
+				</div>
+				<div class="testomonial-info-text">
+					<p>Best place to get costume design according to your needs. Need any type of design just consult here. I am totally satisfied with the service provided from this place. Thanks for building this monument precisely as per my request :) :).</p>
+				</div>
+				<div class="testomonial-info-about">
+					<div class="testomonial-info-name">
+						<h1>Nishal Parajuli</h1>
+					</div>
+					<div class="testomonial-user-position">
+						<p>Client</p>
+					</div>
+				</div>
+			</div>
+			</div>
+				</li>
+				<li class="glide__slide">
+					<div class="testomonial">
+						<div class="testomonial-info">
+				<div class="testomonial-info-image">
+					<img src="asset/aakash.jpg" style="width: 200px;">
+				</div>
+				<div class="testomonial-info-text">
+					<p>I have personally printed Mask straps and Doremon model here. Amazing service & on-time delivery..</p>
+				</div>
+				<div class="testomonial-info-about">
+					<div class="testomonial-info-name">
+						<h1>Aakash Uprety</h1>
+					</div>
+					<div class="testomonial-user-position">
+						<p>Client</p>
+					</div>
+				</div>
+			</div>
+			</div>
+				</li>
+				<li class="glide__slide">
+					<div class="testomonial">
+						<div class="testomonial-info">
+				<div class="testomonial-info-image">
+					<img src="asset/himal.jpg" style="width: 200px;">
+				</div>
+				<div class="testomonial-info-text">
+					<p>With the theme of "Conception to Creation",
+Aaratech 3D stands out for its name. The attention to detail
+and quality of your prints is exceptional. I love how you offer
+customizable options for clients to bring their ideas to life. May
+your progress be as swift as warp speed!.</p>
+				</div>
+				<div class="testomonial-info-about">
+					<div class="testomonial-info-name">
+						<h1>Himal Bhandari</h1>
+					</div>
+					<div class="testomonial-user-position">
+						<p>Client</p>
+					</div>
+				</div>
+			</div>
+			</div>
+				</li>
+				<li class="glide__slide">
+					<div class="testomonial">
+						<div class="testomonial-info">
+				<div class="testomonial-info-image">
+
+					<img src="asset/binil.jpg" style="width: 200px; 
+					">
+				</div>
+				<div class="testomonial-info-text">
+					<p>Great place for 3D printing solution and one of the
+cheapest in the country.Fully satisfied by their work..</p>
+				</div>
+				<div class="testomonial-info-about">
+					<div class="testomonial-info-name">
+						<h1>Binilraj Adhikari</h1>
+					</div>
+					<div class="testomonial-user-position">
+						<p>Client</p>
+					</div>
+				</div>
+			</div>
+			</div>
+				</li>
+				<li class="glide__slide">
+					<div class="testomonial">
+						<div class="testomonial-info">
+				<div class="testomonial-info-image">
+					<img src="asset/sandip.jpg" style="width: 200px; height: 200px;">
+				</div>
+				<div class="testomonial-info-text">
+					<p>AARATECH3D must plan itself to grow into an
+R&D company building knowledge in the field of Digital
+Manufacturing in Nepal. I would love to see an innovation wir
+developed by AARATECH itself in the near future.</p>
+				</div>
+				<div class="testomonial-info-about">
+					<div class="testomonial-info-name">
+						<h1>Sandip Gewali</h1>
+					</div>
+					<div class="testomonial-user-position">
+						<p>Client</p>
+					</div>
+				</div>
+			</div>
+			</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="glide__arrows" data-glide-el="controls">
+			<button class="glide__arrow glide__arrow--left" data-glide-dir="<" style="color: #00c3ff;border-radius: 50%; background-color: #fff; font-size: 25px;">&#10094;</button>
+			<button class="glide__arrow glide__arrow--right" data-glide-dir=">" style="color: #00c3ff; border-radius: 50%; background-color: #fff; font-size: 25px;">&#10095;</button>
+		</div>
+	</div>
+		
+	</section>
+	<!-- testomonials section starts -->
+	<!-- aaretch section starts -->
+	<section id="aaratech">
+		<div class="aaratech">
+			<div class="aaratech-heading">
+				<h1>Know Who Are We.</h1>
+			</div>
+			<div class="arratech-video">
+				<video controls autoplay loop >
+					<source src="asset/aaratech.mp4" type="">
+			  	Sorry, you may not be able to watch this video. Please try opening the website in another browser.
+				</video>
+
+			</div>
+		</div>
+	</section>
+	<!-- aaretech section ends -->
+	<!-- footer section starts -->
+	<section id="footer">
+		<div class="footer">
+			<div class="footer-left">
+				<div class="left-footer-img">
+					<img src="asset/product.png" width="200px;">
+				</div>
+				<div class="left-footer-about">
+					<span>Welcome to Aaratech 3D, your one-stop solutions for 3D printing,
+Prototyping and Design solution.</span>
+				</div>
+				
+			</div>
+			<div class="footer-right">
+				<div class="footer-right-about">
+					<div class="footer-heading">
+						<h1>About</h1>
+					</div>
+					<div class="footer-about-links">
+						<a href="">About Us</a>
+						<a href="">Privacy Policy</a>
+						<a href="">Our Team</a>
+					</div>
+				</div>
+				<div class="footer-right-contact">
+					<div class="footer-heading">
+						<h1>Contact</h1>
+					</div>
+					<div class="footer-contact-links">
+						<a href="">Careers</a>
+						<a href="">Blogs</a>
+						<a href="">Contact Us</a>
+					</div>
+				</div>
+				<div class="footer-right-products">
+					<div class="footer-heading">
+						<h1>Products</h1>
+					</div>
+					<div class="footer-products-links">
+						<a href="">BooksMandala</a>
+						<a href="">Gwei Station</a>
+						<a href="">Marble Acadate</a>
+					</div>
+				</div>
+			</div>
+		</div><hr>
+		<div class="footer-ends">
+			<div class="footer-left-end">
+				<h1>Copyright &copy; 2023. Made with <3 by Sankalpa Dahal.</h1>
+			</div>
+			<div class="footer-right-ends">
+				<div class="end-footer-icons">
+					<div class="footer-facebook-icon">
+						<a href=""><i class="fa-brands fa-facebook-f" style="background: linear-gradient(45deg, #3B5998, #4C70BA, #2B4E8C); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i></a>
+					</div>
+					<div class="footer-instagram-icon">
+						<a href=""><i class="fa-brands fa-instagram" style="background: linear-gradient(360deg, #fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%,#285AEB 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i></a>
+					</div>
+					<div class="footer-twitten-icon">
+						<a href=""><i class="fa-brands fa-twitter" style="background: linear-gradient(45deg, #1DA1F2, #1A91DA, #2C81B4, #4F5E75); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i></a>
+					</div>
+					<div class="footer-linkedln-icon">
+						<a href=""><i class="fa-brands fa-linkedin" style="background: linear-gradient(45deg, #0077B5, #1769FF, #004AB3, #012B6C); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer section ends -->
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+    	AOS.init();
+  	</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/glide.min.js"></script>
+	<script>
+		const config = {
+			type: 'carousel',
+			perView: 1,
+			animationDuration: 1000,
+			animationTimingFunc: 'ease-in-out',
+			gap: 30,
+			breakpoints: {
+				768: {
+					perView: 1
+				}
+			}
+		}
+
+		new Glide('.glide', config).mount()
+	</script>
+<script>
+	$('.menu-toggle').click(function(){
+	  $('.site-nav').toggleClass('site-nav--open', 500);
+	  $(this).toggleClass('open');
+	});
+</script>
+<script>
+  new WOW().init();
+</script>
+</html>
